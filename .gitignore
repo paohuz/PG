@@ -1,0 +1,11 @@
+data/*
+*.xlsx
+*.png
+*.log
+template.json
+model/*
+model_store/*
+.vscode
+result_log/*
+summary/*
+summary_store/*

@@ -1,0 +1,66 @@
+{
+    "train": {
+        "mode": "train",
+        "csv": {
+            "path": "./data/",
+            "filename": "EURUSD30_4.csv",
+            "dateformat": "%d-%m-%y %H:%M",
+            "datestart": "2000-06-01 00:00:00",
+            "dateend": "2000-08-31  23:30:00",
+            "freq": "30min",
+            "codes": [
+                "EURUSD"
+            ],
+            "features": [
+                "close"
+            ],
+            "baseprice": "close"
+        },
+        "model": {
+            "window": 50,
+            "epoch": 1,
+            "cost": 0.0002,
+            "learning_rate": 1e0,
+            "continue": true,
+            "plot": false,
+            "save_hist": false,
+            "checkpoint": "./model/",
+            "norm" : {
+                "mx" : 10,
+                "mn" : 1
+            }
+        }
+    },
+    "test": {
+        "mode": "test",
+        "csv": {
+            "path": "./data/",
+            "filename": "EURUSD30_4.csv",
+            "dateformat": "%d-%m-%y %H:%M",
+            "datestart": "2000-09-01 00:00:00",
+            "dateend": "2000-09-10 23:30:00",
+            "freq": "30min",
+            "codes": [
+                "EURUSD"
+            ],
+            "features": [
+                "close"
+            ],
+            "baseprice": "close"
+        },
+        "model": {
+            "window": 50,
+            "epoch": 1,
+            "cost": 0.0002,
+            "learning_rate": 1,
+            "continue": true,
+            "plot": false,
+            "save_hist": false,
+            "checkpoint": "./model/",
+            "norm" : {
+                "mx" : 10,
+                "mn" : 1
+            }
+        }
+    }
+}
