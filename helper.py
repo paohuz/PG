@@ -152,8 +152,8 @@ class Helper:
 
     @staticmethod
     def w_csv(content, name):
-        workbook1 = load_workbook('history.xlsx')
-        writer = pd.ExcelWriter('history.xlsx', engine='openpyxl')
+        workbook1 = load_workbook('/kw_resources/history.xlsx')
+        writer = pd.ExcelWriter('/kw_resources/history.xlsx', engine='openpyxl')
         writer.book = workbook1
         pd.DataFrame(content).to_excel(writer, sheet_name=name)
         writer.save()

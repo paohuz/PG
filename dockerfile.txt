@@ -1,0 +1,10 @@
+FROM tensorflow/tensorflow:1.13.1-gpu-py3
+
+RUN apt-get update && apt-get install -y git
+RUN pip install openpyxl pandas matplotlib pprint tflearn sklearn
+
+RUN git clone https://github.com/paohuz/PG
+
+WORKDIR PG
+
+CMD python3 main.py

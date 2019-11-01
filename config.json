@@ -2,7 +2,7 @@
     "train": {
         "mode": "train",
         "csv": {
-            "path": "./data/",
+            "path": "kw_resources/data/",
             "filename": "EURUSD30_4.csv",
             "dateformat": "%d-%m-%y %H:%M",
             "datestart": "2000-06-01 00:00:00",
@@ -34,7 +34,7 @@
     "test": {
         "mode": "test",
         "csv": {
-            "path": "./data/",
+            "path": "/kw_resources/data/",
             "filename": "EURUSD30_4.csv",
             "dateformat": "%d-%m-%y %H:%M",
             "datestart": "2000-09-01 00:00:00",
@@ -56,7 +56,7 @@
             "continue": true,
             "plot": false,
             "save_hist": false,
-            "checkpoint": "./model/",
+            "checkpoint": "/kw_resources/model/",
             "norm" : {
                 "mx" : 10,
                 "mn" : 1

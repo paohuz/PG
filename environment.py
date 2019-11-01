@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 class Environment:
     def __init__(self, mode):
-        self.config = Helper.get_config('config')[mode]
+        self.config = Helper.get_config('/kw_resources/config')[mode]
         self.config_mode = self.config['mode']
         self.config_csv = self.config['csv']
         self.config_model = self.config['model']

@@ -61,7 +61,7 @@ def main():
 
     saveat = 50
 
-    while True:
+    while True  and count <= 100:
         if count % saveat == 1:
             mode = 'test'
             env = Environment(mode)
